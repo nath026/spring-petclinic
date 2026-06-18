@@ -8,11 +8,11 @@ jobs:
   greet-user:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
+    - name: "Checkout code"
       uses: actions/checkout@v3
 
-    - name: Dire bonjour
-      uses: .github/actions/action.yml
+    - name: "Dire bonjour"
+      uses: ./actions/action.yml
       with:
         username: "Jean"
         greeting: "Salut"
